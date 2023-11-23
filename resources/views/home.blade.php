@@ -2,7 +2,5 @@
 
 
 @section('content')
-    <div class="container">
-        <h2>Nella nostra fumetteria sono presenti {{ $products }} fumetti</h2>
-    </div>
+    <h2>Nella nostra fumetteria sono presenti {{ $products }} fumetti</h2>
 @endsection
