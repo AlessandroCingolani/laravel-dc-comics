@@ -7,7 +7,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">List Comics</a>
+                        <a class="nav-link" href="{{ route('comics.index') }}">List Comics</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">New Comic</a>
