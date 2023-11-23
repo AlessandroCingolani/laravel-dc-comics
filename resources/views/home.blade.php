@@ -2,5 +2,7 @@
 
 
 @section('content')
-    <h1>Home</h1>
+    <div class="container">
+        <h2>Nella nostra fumetteria sono presenti {{ $products }} fumetti</h2>
+    </div>
 @endsection
