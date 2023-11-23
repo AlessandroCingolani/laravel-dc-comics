@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('title', 100);
             $table->string('slug', 100)->unique();
             $table->text('description')->nullable();
-            $table->string('thumb');
+            $table->text('thumb');
             $table->string('price', 10);
-            $table->string('series', 25);
-            $table->date('sale_date');
+            $table->string('series', 50);
+            $table->string('sale_date', 30);
             $table->string('type', 30);
             $table->text('artists');
             $table->text('writers');
