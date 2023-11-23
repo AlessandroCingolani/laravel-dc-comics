@@ -15,6 +15,7 @@ class ComicsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $comics = config('comics');
+        dump($comics);
     }
 }
