@@ -4,13 +4,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link active  {{ Route::currentRouteName() === 'home' ? 'ac_active' : '' }}"
+                            aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('comics.index') }}">Lista Fumetti</a>
+                        <a class="nav-link  {{ Route::currentRouteName() === 'comics.index' ? 'ac_active' : '' }}"
+                            href="{{ route('comics.index') }}">Lista Fumetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('comics.create') }}">Nuovo Fumetto</a>
+                        <a class="nav-link  {{ Route::currentRouteName() === 'comics.create' ? 'ac_active' : '' }}"
+                            href="{{ route('comics.create') }}">Nuovo Fumetto</a>
                     </li>
                 </ul>
             </div>
