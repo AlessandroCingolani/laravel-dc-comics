@@ -14,7 +14,10 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $products = Comic::paginate(10);
+        $products = Comic::orderBy('id')->paginate(10);
+        if (empty($products)) {
+            abort(404);
+        }
         return view('comics.index', compact('products'));
     }
 
