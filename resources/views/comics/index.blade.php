@@ -23,9 +23,9 @@
                     <td>
                         <a href="{{ route('comics.show', $comic) }}" class="btn btn-success"> <i
                                 class="fa-solid fa-circle-info"></i></a>
-                        {{-- <a href="{{ route('comics.show', $comic) }}" class="btn btn-warning"> <i
+                        <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning"> <i
                                 class="fa-solid fa-pencil"></i></a>
-                        <a href="{{ route('comics.show', $comic) }}" class="btn btn-danger"> <i
+                        {{-- <a href="{{ route('comics.show', $comic) }}" class="btn btn-danger"> <i
                                 class="fa-regular fa-trash-can"></i></a> --}}
                     </td>
 
