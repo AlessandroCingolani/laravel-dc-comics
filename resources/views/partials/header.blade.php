@@ -4,7 +4,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active  {{ Route::currentRouteName() === 'home' ? 'ac_active' : '' }}"
+                        <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'ac_active' : '' }}"
                             aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
