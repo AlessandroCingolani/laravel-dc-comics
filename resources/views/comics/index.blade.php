@@ -15,7 +15,7 @@
                 <th scope="col">Nome Fumetto</th>
                 <th scope="col">Series</th>
                 <th scope="col">Prezzo</th>
-                <th scope="col">Azioni</th>
+                <th class="text-center" scope="col">Azioni</th>
             </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@
                     <td>{{ $comic->title }}</td>
                     <td>{{ $comic->series }}</td>
                     <td>{{ $comic->price }}</td>
-                    <td>
+                    <td class="text-center">
                         <a href="{{ route('comics.show', $comic) }}" class="btn btn-success"> <i
                                 class="fa-solid fa-circle-info"></i></a>
                         <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning"> <i
