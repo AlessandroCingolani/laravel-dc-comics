@@ -1,7 +1,10 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>{{ $comic->title }}</h1>
+    <h1>{{ $comic->title }}
+        <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning"> <i class="fa-solid fa-pencil"></i></a>
+        @include('partials.formDelete')
+    </h1>
 
     <div class="row">
         <div class="col">
